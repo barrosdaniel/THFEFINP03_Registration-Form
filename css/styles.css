@@ -5,7 +5,10 @@
   --color-gray-dark: #555;
   --color-gray: #888;
   --color-gray-light: #bbb;
-  --color-gray-extra-light: #f9f9f9;
+  --color-gray-extra-light: #eaeaea;
+  --color-white: #f9f9f9;
+  --color-focus: #0F0C8A;
+  --color-highlight: #079CB0;
 }
 
 
@@ -25,7 +28,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: var(--color-gray-extra-light);
+  background-color: var(--color-white);
   color: var(--color-gray-extra-dark);
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -61,7 +64,7 @@ ul {
 
 .header__heading {
   background-color: var(--color-gray-extra-dark);
-  color: var(--color-gray-extra-light);
+  color: var(--color-white);
   text-transform: uppercase;
   padding: 2rem;
 }
@@ -84,3 +87,88 @@ ul {
   border-bottom: 2px solid var(--color-gray-extra-dark);
   margin: 0 1rem;
 }
+
+
+
+/* Form
+====================================================================== */
+form {
+  padding: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding-bottom: 3rem;
+}
+
+fieldset legend {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+
+fieldset:nth-child(1) {
+  border-bottom: 3px solid var(--color-gray-extra-dark);
+}
+
+label {
+  font-size: 1.5rem;
+  color: var(--color-gray);
+  margin: 1rem 0;
+}
+
+label,
+input {
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  background-color: var(--color-gray-extra-light);
+  color: var(--color-gray);
+  padding: 1.5rem 1rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+input#postal_code {
+  width: 50%;
+}
+
+input::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 1rem;
+  color: var(--color-gray-light);
+  font-size: 1.3rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border: 2px solid var(--color-focus);
+}
+
+
+
+
+
+button {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-highlight);
+  color: var(--color-white);
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+
+
+/* Contact Information Fieldset
+====================================================================== */
