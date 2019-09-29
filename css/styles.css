@@ -1,0 +1,86 @@
+/* Variables
+====================================================================== */
+:root {
+  --color-gray-extra-dark: #222;
+  --color-gray-dark: #555;
+  --color-gray: #888;
+  --color-gray-light: #bbb;
+  --color-gray-extra-light: #f9f9f9;
+}
+
+
+/* Resets
+====================================================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-gray-extra-light);
+  color: var(--color-gray-extra-dark);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* Utilities
+====================================================================== */
+
+
+
+/* Header
+====================================================================== */
+.header {
+  text-align: center;
+}
+
+.header__heading {
+  background-color: var(--color-gray-extra-dark);
+  color: var(--color-gray-extra-light);
+  text-transform: uppercase;
+  padding: 2rem;
+}
+
+.header__title {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.header__text {
+  padding: 0 1rem 1rem;
+  color: var(--color-gray);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.header__divider {
+  height: 9px;
+  border-top: 4px solid var(--color-gray-extra-dark);
+  border-bottom: 2px solid var(--color-gray-extra-dark);
+  margin: 0 1rem;
+}
