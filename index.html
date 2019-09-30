@@ -70,36 +70,40 @@
     <fieldset>
       <legend>Newsletter</legend>
 
-      <label>Select the newsletters you would like to receive</label>
+      <div class="form-selection">
+        <label>Select the newsletters you would like to receive</label>
 
-      <div class="form-group">
-        <input type="checkbox" name="newsletter_subscription" id="html"
-          value="html">
-        <label for="html">HTML News</label>
+        <div class="form-group">
+          <input type="checkbox" name="newsletter_subscription" id="html"
+            value="html">
+          <label for="html">HTML News</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" name="newsletter_subscription" id="css"
+            value="css">
+          <label for="css">CSS News</label>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" name="newsletter_subscription" id="JS"
+            value="JS">
+          <label for="JS">JavaScript News</label>
+        </div>
       </div>
 
-      <div class="form-group">
-        <input type="checkbox" name="newsletter_subscription" id="css"
-          value="css">
-        <label for="css">CSS News</label>
-      </div>
-
-      <div class="form-group">
-        <input type="checkbox" name="newsletter_subscription" id="JS"
-          value="JS">
-        <label for="JS">JavaScript News</label>
-      </div>
-
-      <label>Newsletter format</label>
-      <div class="form-group">
-        <input type="radio" name="newsletter_format" id="html_format"
-          value="html_format">
-        <label for="html_format">HTML</label>
-      </div>
-      <div class="form-group">
-        <input type="radio" name="newsletter_format" id="text_format"
-          value="text_format">
-        <label for="text_format">Plain text</label>
+      <div class="form-selection">
+        <label>Newsletter format</label>
+        <div class="form-group">
+          <input type="radio" name="newsletter_format" id="html_format"
+            value="html_format">
+          <label for="html_format">HTML</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" name="newsletter_format" id="text_format"
+            value="text_format">
+          <label for="text_format">Plain text</label>
+        </div>
       </div>
 
       <label for="topics">Other topics you'd like to hear about</label>

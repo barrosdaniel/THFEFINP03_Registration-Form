@@ -108,13 +108,17 @@ fieldset legend {
 }
 
 fieldset:nth-child(1) {
-  border-bottom: 3px solid var(--color-gray-extra-dark);
+  border-bottom: 2px solid var(--color-gray-extra-dark);
 }
 
 label {
   font-size: 1.5rem;
   color: var(--color-gray);
   margin: 1rem 0;
+}
+
+.form-selection {
+  margin-bottom: 1rem;
 }
 
 .form-group label {
@@ -130,7 +134,7 @@ fieldset:nth-child(2) label,
 fieldset:nth-child(2) input {
   display: inline-block;
   width: unset;
-  margin: 0.75rem;
+  margin: 0.5rem;
 }
 
 fieldset:nth-child(2) input {
@@ -164,9 +168,10 @@ input::placeholder {
 
 input:focus,
 select:focus,
-textarea:focus {
-  outline: none;
-  border: 2px solid var(--color-focus);
+textarea:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 2px solid var(--color-focus);
 }
 
 button,
@@ -191,11 +196,8 @@ button:hover {
 
 .copyright {
   font-size: 1.4rem;
+  margin: 2rem 0;
   color: var(--color-gray-dark);
   font-style: italic;
   text-align: center;
-}
-
-.copyright {
-  margin: 2rem 0;
 }
