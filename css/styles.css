@@ -111,7 +111,7 @@ fieldset legend {
   padding: 1.5rem 0;
 }
 
-fieldset:nth-child(1) {
+.contact {
   border-bottom: 2px solid var(--color-gray-extra-dark);
 }
 
@@ -139,14 +139,14 @@ input {
   display: block;
 }
 
-fieldset:nth-child(2) label,
-fieldset:nth-child(2) input {
+.newsletter label,
+.newsletter input {
   display: inline-block;
   width: unset;
   margin: 0.5rem;
 }
 
-fieldset:nth-child(2) input {
+.newsletter input {
   margin-right: 1rem;
 }
 
