@@ -187,11 +187,15 @@ input[type="checkbox"] {
 
 input:focus,
 select:focus,
-textarea:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
+textarea:focus {
   border: 2px solid var(--color-focus);
 }
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 2px solid var(--color-focus);
+}
+
 
 button,
 button:active {
