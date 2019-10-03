@@ -175,12 +175,22 @@ input::placeholder {
   font-size: 1.3rem;
 }
 
+input,
+select,
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+  transition: all 0.5s;
+  border: 2px solid transparent;
+  outline: none;
+}
+
 input:focus,
 select:focus,
 textarea:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 2px solid var(--color-focus);
+  border: 2px solid var(--color-focus);
 }
 
 button,
