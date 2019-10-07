@@ -131,7 +131,7 @@ label span {
 }
 
 .form-group label {
-  margin: none;
+  margin: 0;
 }
 
 label,
